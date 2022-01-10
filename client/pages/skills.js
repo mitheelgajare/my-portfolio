@@ -16,7 +16,7 @@ const Skills = () => {
     "NextJS",
     "Firebase",
     "ExpressJS",
-    "SQL (PostgreSQL, Postgres with Prisma 2)",
+    "SQL (PostgreSQL, Postgres with Prisma v2)",
     "Solidity (Ethereum & Blockhain Stuff)",
   ];
   return (
