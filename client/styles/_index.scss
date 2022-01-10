@@ -1,0 +1,84 @@
+$primary-color: #267fde;
+
+.home-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .hero {
+    font-size: 5rem;
+    border: 0.5rem solid $primary-color;
+    padding: 1rem 2.5rem;
+    animation-name: swoop;
+    animation-duration: 2s;
+    margin: 1rem;
+  }
+
+  @keyframes swoop {
+    0% {
+      transform: translateY(100px);
+      opacity: 10%;
+    }
+
+    100% {
+      transform: translateY(0px);
+      opacity: 100%;
+      display: block;
+    }
+  }
+
+  button {
+    border-radius: 2.5rem;
+    padding: 1rem 2.5rem;
+    border: 2px solid $primary-color;
+    background: none;
+    margin: 1rem 0;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    font-size: 2rem;
+    transition-property: all;
+    transition-duration: 0.5s;
+    animation-name: swoopButton;
+    animation-duration: 6s;
+    animation-delay: 0s;
+
+    &:hover {
+      background: $primary-color;
+      color: white;
+    }
+  }
+
+  @keyframes swoopButton {
+    0% {
+      transform: translateY(100px);
+      opacity: 0%;
+    }
+
+    33% {
+      transform: translateY(100px);
+      opacity: 0%;
+      display: none;
+    }
+
+    100% {
+      transform: translateY(0px);
+      opacity: 100%;
+      display: block;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .hero {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 312px) {
+    .hero {
+      font-size: 2rem;
+    }
+  }
+}

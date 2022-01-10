@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap");
+.home-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-page .hero {
+  font-size: 5rem;
+  border: 0.5rem solid #267fde;
+  padding: 1rem 2.5rem;
+  -webkit-animation-name: swoop;
+          animation-name: swoop;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  margin: 1rem;
+}
+
+@-webkit-keyframes swoop {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 10%;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+    display: block;
+  }
+}
+
+@keyframes swoop {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 10%;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+    display: block;
+  }
+}
+
+.home-page button {
+  border-radius: 2.5rem;
+  padding: 1rem 2.5rem;
+  border: 2px solid #267fde;
+  background: none;
+  margin: 1rem 0;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  font-size: 2rem;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-animation-name: swoopButton;
+          animation-name: swoopButton;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.home-page button:hover {
+  background: #267fde;
+  color: white;
+}
+
+@-webkit-keyframes swoopButton {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0%;
+  }
+  33% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0%;
+    display: none;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+    display: block;
+  }
+}
+
+@keyframes swoopButton {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0%;
+  }
+  33% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0%;
+    display: none;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 850px) {
+  .home-page .hero {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 312px) {
+  .home-page .hero {
+    font-size: 2rem;
+  }
+}
+
+.skills-page {
+  min-height: 100vh;
+}
+
+.skills-page .title {
+  background: #267fde;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+}
+
+.skills-page .skills {
+  margin: 1rem;
+}
+
+.skills-page .skills .skill {
+  border: 3px solid #267fde;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.skills-page .skills .skill:hover {
+  background: #267fde;
+  color: white;
+  font-size: 2rem;
+}
+
+.projects-page {
+  min-height: 100vh;
+}
+
+.projects-page .title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background: #267fde;
+  color: white;
+  font-size: 5rem;
+}
+
+.projects-page .projects {
+  margin: 1rem;
+}
+
+.projects-page .projects .project {
+  border: 3px solid #267fde;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.projects-page .projects .project .name {
+  font-size: 2rem;
+}
+
+.info-page {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+  grid-auto-rows: minmax(20vh, auto);
+}
+
+.info-page .title {
+  grid-column: span 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20vh;
+  font-size: 3rem;
+}
+
+.info-page p {
+  padding: 1rem 2.5rem;
+  border: 2px solid #267fde;
+  min-height: 10vh;
+}
+
+.info-page .buttondiv {
+  grid-column: span 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.info-page .buttondiv button {
+  border-radius: 2.5rem;
+  padding: 1rem 2.5rem;
+  border: 2px solid #267fde;
+  background: none;
+  margin: 0 1rem;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  -webkit-animation-name: swoopIn;
+          animation-name: swoopIn;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.info-page .buttondiv button:hover {
+  background: #267fde;
+  color: white;
+}
+
+@-webkit-keyframes swoopIn {
+  from {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes swoopIn {
+  from {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@media (max-width: 664px) {
+  .info-page {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .info-page .title {
+    grid-column: span 1;
+  }
+  .info-page .buttondiv {
+    grid-column: span 1;
+  }
+}
+
+body {
+  margin: 0;
+}
+/*# sourceMappingURL=App.css.map */

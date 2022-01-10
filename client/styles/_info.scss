@@ -1,0 +1,76 @@
+$primary-color: #267fde;
+
+.info-page {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+  grid-auto-rows: minmax(20vh, auto);
+
+  .title {
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-size: 3rem;
+  }
+
+  p {
+    padding: 1rem 2.5rem;
+    border: 2px solid $primary-color;
+    min-height: 10vh;
+  }
+
+  .buttondiv {
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    button {
+      border-radius: 2.5rem;
+      padding: 1rem 2.5rem;
+      border: 2px solid $primary-color;
+      background: none;
+      margin: 0 1rem;
+      cursor: pointer;
+      transition-property: all;
+      transition-duration: 0.5s;
+      font-family: "Poppins", sans-serif;
+      font-size: 2rem;
+      animation-name: swoopIn;
+      animation-duration: 3s;
+
+      &:hover {
+        background: $primary-color;
+        color: white;
+      }
+    }
+
+    @keyframes swoopIn {
+      from {
+        transform: translateX(-300px);
+      }
+
+      to {
+        transform: translateX(0px);
+      }
+    }
+  }
+
+  @media (max-width: 664px) {
+    grid-template-columns: 1fr;
+
+    .title {
+      grid-column: span 1;
+    }
+
+    .buttondiv {
+      grid-column: span 1;
+    }
+  }
+}

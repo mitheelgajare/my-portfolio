@@ -1,0 +1,28 @@
+$primary-color: #267fde;
+
+.projects-page {
+  min-height: 100vh;
+
+  .title {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background: $primary-color;
+    color: white;
+    font-size: 5rem;
+  }
+
+  .projects {
+    margin: 1rem;
+
+    .project {
+      border: 3px solid $primary-color;
+      margin: 1rem 0;
+      padding: 1rem;
+      font-family: "Poppins", sans-serif;
+
+      .name {
+        font-size: 2rem;
+      }
+    }
+  }
+}
