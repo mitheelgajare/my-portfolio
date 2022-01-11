@@ -1,4 +1,13 @@
-# 0.1.0 (2022-01-11)
+# [0.2.0](https://github.com/mitheelgajare/my-portfolio/compare/v0.1.0...v0.2.0) (2022-01-11)
+
+
+### Features
+
+* added link to gh profile ([de5523a](https://github.com/mitheelgajare/my-portfolio/commit/de5523ae26d920c9dbfd79ecf5e40c43276fd2c3))
+
+
+
+# [0.1.0](https://github.com/mitheelgajare/my-portfolio/compare/4d3935e4fda48c54b80723f9c8857fd2a38883c9...v0.1.0) (2022-01-11)
 
 
 ### Features
