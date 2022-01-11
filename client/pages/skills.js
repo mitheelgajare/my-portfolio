@@ -18,6 +18,7 @@ const Skills = () => {
     "ExpressJS",
     "SQL (PostgreSQL, Postgres with Prisma v2)",
     "Solidity (Ethereum & Blockhain Stuff)",
+    "Netlify, Heroku",
   ];
   return (
     <div className="skills-page">
