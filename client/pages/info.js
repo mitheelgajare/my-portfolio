@@ -19,7 +19,7 @@ const Info = () => {
       </p>
       <p className="para">
         <h3 className="para-title">Contact Me</h3> <br />
-        This is undisclosable information <br />
+        Github: <a href="https://github.com/mitheelgajare">Click here</a>
       </p>
       <p className="para">
         <h3 className="para-title">Spoken Languages I Know</h3>
