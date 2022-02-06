@@ -4,7 +4,7 @@ import Head from "next/head";
 const Skills = () => {
   const skills = [
     "HTML",
-    "CSS",
+    "CSS (with Tailwind)",
     "JavaScript (including NodeJS) ",
     "Typescript",
     "Python",
@@ -19,6 +19,7 @@ const Skills = () => {
     "SQL (PostgreSQL, Postgres with Prisma v2)",
     "Solidity (Ethereum & Blockhain Stuff)",
     "Netlify, Heroku",
+    "UI/UX design with Figma",
   ];
   return (
     <div className="skills-page">
