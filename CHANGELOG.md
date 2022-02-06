@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/mitheelgajare/my-portfolio/compare/v0.2.0...v0.3.0) (2022-02-06)
+
+
+### Features
+
+* **client:** Add two skills ([ab6a356](https://github.com/mitheelgajare/my-portfolio/commit/ab6a3563c314313e7ba52d8bf6ab23e710e04664))
+
+
+
 # [0.2.0](https://github.com/mitheelgajare/my-portfolio/compare/v0.1.0...v0.2.0) (2022-01-11)
 
 
